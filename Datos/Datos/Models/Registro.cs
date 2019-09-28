@@ -3,6 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Datos.Models
 {
+    public enum TypeList
+    {
+     Urquiza,
+     Uva,
+     Urgar,
+     Uber,
+     Ugarte
+    }
     public class Registro
     {
         [key]
@@ -13,6 +21,6 @@ namespace Datos.Models
         public string Email { get; set; }
         [DateTime]
         public int Birthdate { get; set; }
-        public string List { get; set; }
+        public TypeList Type { get; set; }
     }
 }
